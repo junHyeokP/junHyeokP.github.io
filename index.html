@@ -1,85 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>박준혁의 홈페이지</title>
-    <link rel="stylesheet" href="homestyle.css" media="screen">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
-    
-<body class = "grid-container">
-    <header>
-        <h1> 박준혁의 홈페이지</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#intro">내 소개</a></li>
-            <li><a href="#study">공부</a></li>
-            <li><a href="#project">프로젝트 팀원</a></li>
-        </ul>
-    </nav>
-
-    <div id= "introduction">
-        <img src="jun/162323599.png"></img>
-        <h3> 한국폴리텍 성남캠퍼스 인공지능소프트웨어과</h3>
-        <h3> 전화번호 : 010 - 0110 - 1001</h3>
-        <h3> 이메일 : <del>yjgplmbwp72@naver.com</del></h3>
-
-        <hr>
-        <p>
-            박준혁의 홈페이지에 오신걸 환영합니다, 이 홈페이지는 인터페이스 디자인실습 강의의 실습 예제로 만들었습니다,<br>
-            오늘 처음으로 글자태그를 배우고 있는데, 열심히 배워서 멋진 홈페이지를 만들어 보겠습니다.
-        </p>
-        <p>
-            글자 태그를 배우고 나서 빨리 목록 태그도 배워서 저에 대해서 목록으로 표현을 할 수 있으면 좋겠습니다.<br>
-            오늘 강의에서 목록 태그를 배우고 나면, 제 홈페이지에 저에 대한 몇가지 사실을 목록 태그를 활용하여 알려드릴게요.
-        </p>
-    </div>
-
-    <hr>
-    <div id = "study">
-
-        <h1><b>지금 SW를 공부하고 있어요</b></h1>
-        <table border = "1">
-            <caption>
-                <h4>&lt;이번 학기에 배우는 과목&gt;</h4>
-            </caption>
-            <thead>
-                <tr>
-                    <td>과목</td>
-                    <td>시간</td>
-                    <td>과목설명</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>인터페이스 디자인 실습</td>
-                    <td>
-                        <ul>
-                            <li>화 오전 : 10:30 ~ 11:45</li>
-                            <li>금 오전 : 9:00 ~ 10:15</li>
-                        </ul>
-                    </td>
-                    <td>웹페이지 만들기 위한 HTML, CSS, JavaScript</td>
-                </tr>
-            </tbody>
-        </table>
-        <ul>
-            <li><a href="https://www.acmicpc.net/user/junhyeokp">내 BOJ</a></li>
-            <li><a href="https://github.com/junHyeokP">나의 GitHub현황</a></li>
-        </ul>
-    </div>
-    <hr>
-    <div id= "project_team" >
-        <h3>나랑 같이 프로젝트를 하고 있는 팀원</h3>
-        <ul>
-            <li><a href="https://github.com/woodoyeon">우도연</a></li>
-            <li><a href="https://github.com/wook89">안형욱</a></li>
-        </ul>
-    </div>
-</body>
-
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>박준혁의 홈페이지</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Junhyeok Park</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">내 정보</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">현재 배우는 과목</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">포트폴리오</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">팀 프로젝트</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">2403110274 박준혁</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">한국폴리텍대학 성남캠퍼스 인공지능소프트웨어과</p>
+                        <a class="btn btn-primary btn-xl" href="#about">더 알아보기</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-primary" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">내 소개</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4">안녕하세요, 현재 성남폴리텍대학에서 자바와 SQL을 비롯한 여러 프로그래밍 언어들을 배우고 있습니다.</p>
+                        <a class="btn btn-light btn-xl" href="#services">현재 이수중인 수업 목록</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">지금 SW를 배우고 있어요</h2>
+                <hr class="divider"/>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h2 mb-2">Java</h3>
+                            <p class="text-muted mb-0">현재 객체 지향 프로그래밍 부분에 대해서 배우고 있습니다.</p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-cpu fs-1 text-primary"></i></div>
+                            <h3 class="h2 mb-2">컴퓨터구조</h3>
+                            <p class="text-muted mb-0">CPU와 프로세스의 상호작용에 관해서 배우는 중입니다.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-grid-1x2 fs-1 text-primary"></i></div>
+                            <h3 class="h2 mb-2">HTML, CSS, JS</h3>
+                            <p class="text-muted mb-0">HTML과 CSS 그리고 자바 스크립트에 대해서 배우고 있습니다.</p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-lock fs-1 text-primary"></i></div>
+                            <h3 class="h2 mb-2">산업안전관리 / 정보보안</h3>
+                            <p class="text-muted mb-0">정보보안에 관한 지식을 습득 중입니다.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-file-earmark-ruled fs-1 text-primary"></i></div>
+                            <h3 class="h2 mb-2">SQL</h3>
+                            <p class="text-muted mb-0">현재 뷰와 인라인 뷰에 대한 공부 중입니다.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-file fs-1 text-primary"></i></div>
+                            <h3 class="h2 mb-2">R project</h3>
+                            <p class="text-muted mb-0">다양한 패키지와 데이터를 불러와서 그래프를 만드는 중입니다.</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.png" title="가상화폐 거래소">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">성남폴리텍대학 팀 프로젝트</div>
+                                <div class="project-name">비트코인 AI자동매매 프로그램</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to action-->
+        <section class="page-section bg-dark text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">내 GitHub, 백준 페이지</h2>
+                <a class="btn btn-light btn-xl" href="https://github.com/junHyeokP">github</a>
+                <a class="btn btn-light btn-xl" href="https://www.acmicpc.net/user/junhyeokp">baekjoon</a>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">현재 진행중인 팀 프로젝트</h2>
+                        <p class="text-muted mb-4">AI를 이용한 자동매매 프로그램</p>
+                        <a class="btn btn-primary btn-xl" href="https://woodoyeon.github.io/bitteam.io/#">사이트 바로가기</a>
+                        <hr class="divider" />
+                        <h2 class="mt-0">프로젝트 팀원</h2>
+                        <hr class="divider" />
+                        <p class="text-muted mb-5">AI를 이용한 비트코인 자동매매 프로그램</p>
+                    </div>
+                </div>
+            </div>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+             <div class="col-lg-3 col-md-6 text-center">
+             <i class="bi-person-fill fs-2 mb-3 text-muted"></i>
+                <div class="container px-4 px-lg-5 text-center">
+                    <h2 class="mb-4">우도연</h2>
+                     <a class="btn btn-primary btn-xl" href="https://woodoyeon.github.io/">website</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <i class="bi-person-fill fs-2 mb-3 text-muted"></i>
+                   <div class="container px-4 px-lg-5 text-center">
+                       <h2 class="mb-4">안형욱</h2>
+                        <a class="btn btn-primary btn-xl" href="https://wook89.github.io/">website</a>
+                   </div>
+               </div>
+               <div class="col-lg-3 col-md-6 text-center">
+                <i class="bi-person-fill fs-2 mb-3 text-muted"></i>
+                   <div class="container px-4 px-lg-5 text-center">
+                       <h2 class="mb-4">김효동</h2>
+                        <a class="btn btn-primary btn-xl" href="https://hyodong123.github.io/myhomepage.io/#contact">website</a>
+                   </div>
+               </div>
+               <div class="col-lg-3 col-md-6 text-center">
+                <i class="bi-person-fill fs-2 mb-3 text-muted"></i>
+                   <div class="container px-4 px-lg-5 text-center">
+                       <h2 class="mb-4">이예은</h2>
+                        <a class="btn btn-primary btn-xl" href="https://yerinfan.github.io/">website</a>
+                   </div>
+               </div>
+               <div class="col-lg-3 col-md-6 text-center">
+                <i class="bi-person-fill fs-2 mb-3 text-muted"></i>
+                   <div class="container px-4 px-lg-5 text-center">
+                       <h2 class="mb-4">유민규</h2>
+                        <a class="btn btn-primary btn-xl" href="https://github.com/woodoyeon">website</a>
+                   </div>
+               </div>
+        </div>
+    </div>        
+                
+           
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Company Name</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
